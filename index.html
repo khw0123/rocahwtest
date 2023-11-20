@@ -1,46 +1,172 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HTML Example</title>
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/about.css">
+  <!--설정값-->
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진활결</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hahmlet:wght@600&family=Jua&display=swap" rel="stylesheet">
+    
+    <!--본문 설정-->
+   <style>
+    
+    .page {
+      margin: -16px;
+      padding: 60px;
+     
+    }
+    .st_title {
+      font-size: xx-large;
+      font-family: 'Hahmlet', serif;
+      
+      margin: 40px 40px ;
+      padding-top: 40px;
+
+    }
+
+    .nd_title {
+      font-size: medium;
+      font-family: 'Bebas Neue', sans-serif;
+      padding-top: -50px;
+      margin-left: 15px;
+      
+      
+    }
+    .nav {
+      margin-left: 300px;
+      margin-top: -70px;
+      
+    }
+    .nav-item {
+      padding-right: 50px;
+      font-size: 20px;
+      
+    }
+     .header_area{
+      background-color: #dceff2;
+    }
+    .nav-link {
+      color: #067084;
+    }
+    
+    main {
+      background-color: #eeeeee;
+      padding-top: 0px;
+     
+
+
+    }
+
+    #carouselExample {
+      max-width: 800px;
+      margin-left: 40px;
+      margin-bottom: 50px;
+    }
+
+
+    .carousel-control-prev-icon {
+      background-color: black;
+    }
+    .carousel-control-next-icon {
+      background-color: black;
+    }
+
+    .제작과정 {
+      font-size: 50px;
+      font-family: 'Jua', sans-serif;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+
+    .개요 {
+      margin-left: 1000px;
+      margin-top: -300px;
+      font-family: 'Jua', sans-serif;
+      font-size: 35px;
+      
+    }
+
+</style>
 </head>
 <body>
-  <section class="center">
-    <aside class="sidebar"></aside>
-    
-    <section class="contents">
-      <!-- page will be include here -->
-      <section id="page" class="page">
-        <section id="about">
-          <section class="frame">
-            <h2><b>HELLO</b>WORLD</h2>
-            
-            <div class="cat">
-              <div class="picture">
-                <img src="images/mew.png" alt="Mew">
-              </div>
-              <small>Mew</small>
+    <header>
+      <div class="header_area">
+      <h3><span class="st_title">진활결</span> <br><span class="nd_title">Results of career activities</span></h3>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="introduce.html">진로 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="book.html">진로 도서</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">.</a>
+      
+      <hr>
+    </div>
+    </header>
+    <main>
+      <div class="page">
+        <span class="제작과정">제작 과정</span> 
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="png/p2.png" class="d-block w-100" alt="...">
             </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/siesta.png" alt="Siesta">
-              </div>
-              <small>Siesta</small>
+            <div class="carousel-item">
+              <img src="png/p3.png" class="d-block w-100" alt="...">
             </div>
-            <div class="cat">
-              <div class="picture">
-                <img src="images/tiger.png" alt="Tiger">
-              </div>
-              <small>Tiger</small>
+            <div class="carousel-item">
+              <img src="png/p4.png" class="d-block w-100" alt="...">
             </div>
-          </section>
-        </section>
-      </section>
-    </section>
-  </section>
+            <div class="carousel-item">
+              <img src="png/p5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="png/p6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+              <img src="png/p1 (2).png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+        <p class="개요"> 제작 날짜 : 2023.11.16 ~  <br>
+          제작 언어 : HTML, CSS      <br>
+          제작 : 강현우  <br>
+          제작 협조 : ???   </p>
+       
+
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
+  
 </body>
 </html>
